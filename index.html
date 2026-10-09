@@ -1,1 +1,105 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Les Iscles Workout</title><link rel="stylesheet" href="style.css"></head><body><header><b>LES ISCLES <span>WORKOUT</span></b><nav><a href="#club">Club</a><a href="#objectifs">Objectifs</a><a href="#seances">Séances</a><a href="#tarifs">Tarifs</a><a href="#boissons">Boissons</a></nav></header><main><section class="hero"><p>LYCÉE LES ISCLES • MANOSQUE</p><h1>LES ISCLES<br><span>WORKOUT</span></h1><h2>Force, progression et esprit d'équipe.</h2><a class="btn" href="#club">Découvrir le club</a></section><section id="club"><small>LE CLUB</small><h2>Progresser ensemble</h2><p class="edit" data-k="club">Le club permet de découvrir la calisthénie et le street workout, de s'entraîner ensemble et de progresser à son rythme.</p><div class="cards"><article><b>💪 Force</b><p class="edit" data-k="force">Développer sa force avec des exercices adaptés.</p></article><article><b>📈 Progression</b><p class="edit" data-k="progression">Améliorer sa technique et apprendre de nouvelles figures.</p></article><article><b>🤝 Équipe</b><p class="edit" data-k="equipe">S'entraider, se motiver et progresser ensemble.</p></article></div></section><section id="objectifs" class="dark"><small>OBJECTIFS</small><h2>Nos objectifs</h2><div class="cards"><article><b>Débuter</b><p class="edit" data-k="objectif1">Apprendre les bases : pompes, tractions, dips et gainage.</p></article><article><b>Progresser</b><p class="edit" data-k="objectif2">Gagner en force, contrôle et endurance.</p></article><article><b>Figures</b><p class="edit" data-k="objectif3">Travailler le handstand, le L-sit et d'autres figures.</p></article></div></section><section id="seances"><small>SÉANCES</small><h2>Ce qu'on fait</h2><div class="sessions"><p><b>01 — Échauffement</b><span class="edit" data-k="seance1">Mobilité et préparation du corps.</span></p><p><b>02 — Technique</b><span class="edit" data-k="seance2">Travail des mouvements et figures.</span></p><p><b>03 — Renforcement</b><span class="edit" data-k="seance3">Pompes, tractions, dips, jambes et gainage.</span></p><p><b>04 — Défi</b><span class="edit" data-k="seance4">Petit défi pour mesurer sa progression.</span></p></div></section><section id="tarifs" class="dark"><small>TARIFS</small><h2>Tarifs</h2><div class="price"><strong class="edit" data-k="tarif">À définir</strong><p class="edit" data-k="tarifText">Les informations sur les tarifs seront indiquées ici.</p></div></section><section id="boissons"><small>BOISSONS & COLLATIONS</small><h2>Après l'effort</h2><div class="cards"><article><b>🥤 Boissons</b><p class="edit" data-k="boissons">Boissons et options fraîches à définir selon le projet.</p></article><article><b>🍌 Collations</b><p class="edit" data-k="collations">Des collations simples peuvent être proposées après les séances.</p></article></div></section></main><footer>© <span id="year"></span> Les Iscles Workout <button onclick="admin()">🔐 Modifier</button></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131a">
+  <title>Les Iscles Workout — Force, Contrôle, Progression</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#accueil" aria-label="Les Iscles Workout, accueil">
+    <span class="logo">LIW</span><span>LES ISCLES <b>WORKOUT</b></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">☰</button>
+  <nav id="nav">
+    <a href="#accueil">Accueil</a><a href="#club">Le club</a><a href="#seances">Séances</a>
+    <a href="#objectifs">Objectifs</a><a href="#tarifs">Tarifs</a><a href="#boissons">Boissons</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="hero-content">
+      <p class="eyebrow">LE CLUB DE CALISTHÉNIE DU LYCÉE</p>
+      <h1>FORCE.<br><span>CONTRÔLE.</span><br>PROGRESSION.</h1>
+      <p class="lead">Développe ta force, maîtrise ton poids du corps et progresse avec tes potes.</p>
+      <div class="actions"><a class="btn primary" href="#club">Découvrir le club</a><a class="btn secondary" href="#tarifs">Voir les tarifs</a></div>
+      <p class="small-note">Tous niveaux · Débutants bienvenus · Progresse à ton rythme</p>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="ring"></div><div class="figure">↑</div><div class="tag tag-one">FORCE</div><div class="tag tag-two">SKILLS</div><div class="tag tag-three">ÉQUIPE</div></div>
+  </section>
+
+  <section class="section" id="club">
+    <div class="section-heading"><p class="eyebrow">BIENVENUE DANS L'ÉQUIPE</p><h2>Un club, une équipe,<br><span>une progression.</span></h2></div>
+    <div class="two-col">
+      <p class="big-copy">Pas besoin d’être fort pour commencer : tu viens comme tu es. Ici, chacun s’entraîne à son niveau, apprend les bases et progresse avec les autres.</p>
+      <div class="feature-list">
+        <article class="feature"><span>01</span><div><h3>Tous niveaux</h3><p>Débutants bienvenus. Les exercices peuvent être adaptés à chacun.</p></div></article>
+        <article class="feature"><span>02</span><div><h3>Entraînement entre élèves</h3><p>On s’encourage, on partage des conseils et on avance ensemble.</p></div></article>
+        <article class="feature"><span>03</span><div><h3>À ton rythme</h3><p>Le but est d’apprendre proprement et de progresser étape par étape.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark-section" id="seances">
+    <div class="section-heading"><p class="eyebrow">À CHACUN SON DÉFI</p><h2>Des séances pour<br><span>progresser vraiment.</span></h2><p class="section-intro">Les séances peuvent être organisées autour de quatre axes :</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-icon">↗</div><p class="card-number">SÉANCE 01</p><h3>Force pure</h3><p>Pompes, tractions et variantes adaptées pour développer la force progressivement.</p></article>
+      <article class="card"><div class="card-icon">◇</div><p class="card-number">SÉANCE 02</p><h3>Figures statiques</h3><p>Apprentissage des positions en contrôle, avec des progressions accessibles.</p></article>
+      <article class="card"><div class="card-icon">⟳</div><p class="card-number">SÉANCE 03</p><h3>Endurance</h3><p>Enchaînements et séries pour améliorer la capacité à tenir l’effort.</p></article>
+      <article class="card"><div class="card-icon">⚡</div><p class="card-number">SÉANCE 04</p><h3>Mouvements dynamiques</h3><p>Coordination, explosivité et maîtrise des mouvements, selon le niveau de chacun.</p></article>
+    </div>
+    <p class="notice">Les exercices et horaires précis sont à confirmer avec l’organisation du club et le lycée.</p>
+  </section>
+
+  <section class="section" id="objectifs">
+    <div class="section-heading"><p class="eyebrow">TES PROCHAINS DÉFIS</p><h2>Apprends de nouvelles<br><span>figures.</span></h2></div>
+    <div class="goal-grid">
+      <article class="goal"><div class="goal-visual handstand">↑</div><div><p class="goal-level">ÉQUILIBRE</p><h3>Handstand</h3><p>Apprendre à tenir en équilibre sur les mains, étape par étape.</p></div></article>
+      <article class="goal"><div class="goal-visual elbow">⌁</div><div><p class="goal-level">CONTRÔLE</p><h3>Elbow lever</h3><p>Maintenir le corps à l’horizontale en utilisant ses bras comme appui.</p></div></article>
+      <article class="goal"><div class="goal-visual lsit">∟</div><div><p class="goal-level">GAINAGE</p><h3>L-sit</h3><p>Soulever les jambes devant soi et tenir la position avec contrôle.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section pricing-section" id="tarifs">
+    <div class="section-heading"><p class="eyebrow">CHOISIS TON PASS</p><h2>Plus tu t’engages,<br><span>plus tu économises.</span></h2><p class="section-intro">Pass de deux mois. Les tarifs et modalités définitifs sont à confirmer avant le lancement.</p></div>
+    <div class="pricing-grid">
+      <article class="price-card"><p class="price-name">STANDARD PASS</p><p class="price"><span>18</span> €</p><p class="duration">2 mois · réduction de 2 €</p><ul><li>Accès aux séances prévues par le club</li><li>Progression à ton rythme</li><li>Entraînement en équipe</li></ul><a class="btn secondary full" href="#club">Découvrir</a></article>
+      <article class="price-card featured"><div class="popular">BON ÉQUILIBRE</div><p class="price-name">PREMIUM PASS</p><p class="price"><span>35</span> €</p><p class="duration">2 mois · réduction de 5 €</p><ul><li>Accès aux séances prévues par le club</li><li>Objectifs de progression</li><li>Entraînement en équipe</li></ul><a class="btn primary full" href="#club">Découvrir</a></article>
+      <article class="price-card"><p class="price-name">ULTIMATE PASS</p><p class="price"><span>50</span> €</p><p class="duration">2 mois · réduction de 10 €</p><ul><li>Accès aux séances prévues par le club</li><li>Suivi de tes objectifs personnels</li><li>Entraînement en équipe</li></ul><a class="btn secondary full" href="#club">Découvrir</a></article>
+    </div>
+    <p class="notice">Les trois séances d’essai offertes évoquées dans le projet sont à confirmer avec le lycée avant toute inscription ou paiement.</p>
+  </section>
+
+  <section class="section drinks" id="boissons">
+    <div class="drink-mark">+</div><div><p class="eyebrow">PENDANT LES SÉANCES</p><h2>Boissons &amp; collations</h2><p>Plusieurs boissons et collations pourront être proposées à des prix bas, sous réserve de l’accord du lycée.</p></div>
+    <div class="drink-badge">PETITS PRIX<br><b>POUR LES ÉLÈVES</b></div>
+  </section>
+
+  <section class="closing"><p class="eyebrow">PRÊT À COMMENCER ?</p><h2>Tu viens comme tu es.<br><span>Tu progresses avec nous.</span></h2><a class="btn primary" href="#seances">Découvrir les séances</a></section>
+</main>
+
+<footer><a class="brand" href="#accueil"><span class="logo">LIW</span><span>LES ISCLES <b>WORKOUT</b></span></a><p>Force, Contrôle, Progression</p><p class="footer-small">Projet de club lycéen · Informations à confirmer avec le lycée.</p><button class="admin-link" id="adminOpen">Administration</button></footer>
+
+<div class="modal-backdrop" id="adminModal" hidden>
+  <section class="admin-panel" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+    <button class="close" id="adminClose" aria-label="Fermer">×</button>
+    <p class="eyebrow">ESPACE DE MODIFICATION</p><h2 id="adminTitle">Administration</h2>
+    <div id="loginBox"><p>Entre le code pour ouvrir l’éditeur sur cet appareil.</p><label for="adminCode">Code d’accès</label><input id="adminCode" type="password" inputmode="numeric" autocomplete="off" placeholder="Code"><button class="btn primary full" id="loginBtn">Ouvrir l’éditeur</button><p class="small-note">Note : le code 1109 est visible dans le code du site. Ce n’est pas une sécurité forte.</p></div>
+    <div id="editorBox" hidden>
+      <p class="notice">Les changements ci-dessous sont enregistrés dans le navigateur de cet appareil uniquement. Pour les publier pour tous les visiteurs, il faut ensuite modifier et republier les fichiers du site sur GitHub.</p>
+      <label for="editHeadline">Titre de l’accueil</label><input id="editHeadline" type="text">
+      <label for="editIntro">Texte de présentation</label><textarea id="editIntro" rows="3"></textarea>
+      <label for="editSessions">Texte d’information sur les séances</label><textarea id="editSessions" rows="3"></textarea>
+      <label for="editDrinks">Texte boissons et collations</label><textarea id="editDrinks" rows="3"></textarea>
+      <div class="actions"><button class="btn primary" id="saveBtn">Enregistrer sur cet appareil</button><button class="btn secondary" id="resetBtn">Réinitialiser</button></div>
+      <button class="btn secondary full" id="logoutBtn">Fermer l’éditeur</button>
+      <p id="saveStatus" class="small-note" role="status"></p>
+    </div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
